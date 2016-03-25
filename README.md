@@ -1,4 +1,4 @@
-# BookWorm-Checks
+# bookworm-checks
 BookWorm's responsive asset check-in, check-out interface. Woo.
 
 # Frameworks
