@@ -10,5 +10,5 @@ BookWorm's responsive asset check-in, check-out interface. Woo.
 * Ben Anthony
 * David Collins
 * Evan King
-* Matt "Mattlock" Lockin
+* Matt "Mattlock" Locklin
 * Garrison Osteen
