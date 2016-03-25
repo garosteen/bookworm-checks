@@ -1,0 +1,8 @@
+{
+  "inventory":
+  [
+    {"title":"HTML For Dummies", "author":"John Doe", "assetType":"BOOK", "id":"1234567890987"},
+    {"title":"JSON For Dummies", "author":"Jason Doe", "assetType":"EBOOK", "id":"1234567890988"},
+    {"title":"Believe", "author":"Justin Bieber", "assetType":"MUSIC_STREAM", "id":"123456789099"}
+  ]
+}

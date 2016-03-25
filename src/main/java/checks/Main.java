@@ -1,5 +1,7 @@
 package checks;
 
+import checks.templates.TestPage;
+
 import static spark.Spark.get;
 
 import java.io.IOException;
@@ -21,10 +23,13 @@ public class Main
 		return "";
 	}
 	
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		get("/", (req, res) -> file("index.html"));
 		get("/checkin", (req, res) -> file("checkin.html"));
 		get("/checkout", (req, res) -> file("checkout.html"));
+
+		/* This is where we'll instantiate each page, based on the Water template workflow */
+		TestPage testPage = new TestPage();
+		get("/test", (req, res) -> testPage.render());
 	}
 }
