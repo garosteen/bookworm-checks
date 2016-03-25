@@ -1,4 +1,4 @@
-# Checks
+# BookWorm-Checks
 BookWorm's responsive asset check-in, check-out interface. Woo.
 
 # Frameworks
@@ -7,8 +7,8 @@ BookWorm's responsive asset check-in, check-out interface. Woo.
 * Blood, sweat, and tears.
 
 # Authors
-Ben Anthony
-David Collins
-Evan King
-Matt "Mattlock" Lockin
-Garrison Osteen
+* Ben Anthony
+* David Collins
+* Evan King
+* Matt "Mattlock" Lockin
+* Garrison Osteen
