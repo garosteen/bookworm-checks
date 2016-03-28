@@ -1,35 +1,20 @@
 package checks;
 
-import checks.templates.TestPage;
+import checks.templates.nested.Navigation;
+import checks.templates.pages.Home;
+import spark.Spark;
 
 import static spark.Spark.get;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+public class Main {
 
-public class Main
-{
-	public static String file(String filename)
-	{
-		try
-		{
-			return new String(Files.readAllBytes(Paths.get("src", "main", "resources", "templates", filename)));
-		}
-		catch(IOException e)
-		{
-			e.printStackTrace();
-		}
-		return "";
-	}
-	
-	public static void main(String[] args) {
-		get("/", (req, res) -> file("index.html"));
-		get("/checkin", (req, res) -> file("checkin.html"));
-		get("/checkout", (req, res) -> file("checkout.html"));
+		public static void main(String[] args) {
+			Spark.staticFileLocation("/public");
 
 		/* This is where we'll instantiate each page, based on the Water template workflow */
-		TestPage testPage = new TestPage();
-		get("/test", (req, res) -> testPage.render());
+			Navigation navMenu = new Navigation();
+
+			Home home = new Home(navMenu);
+			get("/", (req, res) -> home.render());
 	}
 }

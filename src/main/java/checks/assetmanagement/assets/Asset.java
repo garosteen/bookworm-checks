@@ -1,4 +1,4 @@
-package checks.assets;
+package checks.assetmanagement.assets;
 
 public class Asset {
 
