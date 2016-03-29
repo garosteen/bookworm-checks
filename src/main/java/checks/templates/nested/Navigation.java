@@ -9,7 +9,7 @@ public class Navigation extends Template {
     private static final Collection<NavItem> navItems = new ArrayList<>();
 
     public Navigation() {
-        navItems.add(new NavItem("Home", "/"));
+        //navItems.add(new NavItem("Home", "/"));
 
         addCollection("navItems", navItems, (nav, map) -> {
             map.add("label", nav.label);

@@ -5,7 +5,7 @@ import checks.templates.nested.Navigation;
 import org.watertemplate.Template;
 
 public class Home extends Template{
-        private final Navigation navMenu;
+    private final Navigation navMenu;
 
     public Home(final Navigation navMenu) {
         this.navMenu = navMenu;
